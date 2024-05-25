@@ -113,5 +113,5 @@ EMAIL_HOST = 'smtp.example.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'harish.1902045@srec.ac.in'
-EMAIL_HOST_PASSWORD = 'Love@learning'
+EMAIL_HOST_PASSWORD = 'sbcsdjkcnbsdjkcnsdcnsdklmckl&gs_lcrp'
 DEFAULT_FROM_EMAIL = 'Rentify <no-reply@harish.com>'
