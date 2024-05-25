@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block title %}{{ property.title }}{% endblock %}
+
+{% block content %}
+  <h2>{{ property.title }}</h2>
+  <p>{{ property.description }}</p>
+  <p>Place: {{ property.place }}</p>
+  <p>Area: {{ property.area }}</p>
+  <p>Bedrooms: {{ property.bedrooms }}</p>
+  <p>Bathrooms: {{ property.bathrooms }}</p>
+  <p>Nearby Hospitals: {{ property.nearby_hospitals }}</p>
+  <p>Nearby Colleges: {{ property.nearby_colleges }}</p>
+  <p>Price: {{ property.price }}</p>
+  <form action="{% url 'interested_in_property' property.id %}" method="post">
+    {% csrf_token %}
+    <button type="submit">I'm Interested</button>
+  </form>
+  <form action="{% url 'like_property' property.id %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Like</button>
+  </form>
+{% endblock %}
